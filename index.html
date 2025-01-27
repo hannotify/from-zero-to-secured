@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>From Zero to Secured: Live-Coding a Full-Stack Jakarta EE REST App with MicroProfile and JWT Authentication</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="Hanno Embregts">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../reveal.js/dist/reset.css">
+    <link rel="stylesheet" href="../../reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="../../reveal.js/dist/theme/sky.css" id="theme">
+
+    <link rel="stylesheet" href="css/event-theme.css" id="custom">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="css/darcula.css" id="highlight-theme" /></head>
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/677a0b6628.js" crossorigin="anonymous"></script>
+<body>
+
+    <div class="reveal">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+
+            <section data-markdown="sections/1-intro.md" data-separator="^\r?\n------\r?\n$"
+                data-separator-vertical="^\r?\n---\r?\n$">
+            </section>
+
+            <section>
+                <section data-background="img/background/questions-monopoly.jpeg" data-background-color="black"
+                    data-background-opacity="0.5">
+                    <h1 class="stroke"><strong>Any questions?</strong></h1>
+                    <a href="https://www.pexels.com/photo/monopoly-car-piece-1634213/"
+                        class="attribution">https://www.pexels.com/photo/monopoly-car-piece-1634213/</a>
+                </section>
+                <section>
+                    <h2>Thank you! 🙂</h2>
+                    <br />
+                    <table style="font-size: 100%">
+                        <tr>
+                            <td style="text-align: right; vertical-align: middle; width: 25%"><i class="fa-brands fa-slideshare"></i></td>
+                            <td style="vertical-align: middle;"><a
+                                    href="https://hanno.codes/slides/from-zero-to-secured/javaland-2025">hanno.codes/slides/from-zero-to-secured/javaland-2025</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right; vertical-align: middle;"><i class="fa-brands fa-github"></i></td>
+                            <td style="vertical-align: middle;" colspan="2"><a 
+                                    href="https://github.com/hannotify/structured-concurrency-bar">github.com/hannotify/gravel-trapp</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right; vertical-align: middle;"><i class="fa-solid fa-globe"></i></td>
+                            <td style="vertical-align: middle;"><a
+                                    href="https://hanno.codes">hanno.codes</a></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right; vertical-align: middle;"><i class="fa-brands fa-bluesky"></i></td>
+                            <td style="vertical-align: middle;"><a
+                                    href="https://bsky.app/profile/hanno.codes">@hanno.codes</a></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right; vertical-align: middle;"><i class="fa-regular fa-envelope"></i></td>
+                            <td style="vertical-align: middle;"><a
+                                    href="">hanno&#8203.&#8203embregts&#8203@&#8203infosupport&#8203.&#8203com</a></td>
+                        </tr>
+                    </table>
+                </section>
+            </section>
+        </div>
+
+        <div class="leftFooter">
+            <a href="https://twitter.com/hannotify">#JavaLand #ZeroToSecured #JakartaEE</a>
+        </div>
+
+        <div class="rightFooter">
+            <a href="https://bsky.app/profile/hanno.codes">@hanno.codes</a>
+        </div>
+    </div>
+
+    <script src="../../reveal.js/dist/reveal.js"></script>
+    <script src="../../reveal.js/plugin/zoom/zoom.js"></script>
+    <script src="../../reveal.js/plugin/notes/notes.js"></script>
+    <script src="../../reveal.js/plugin/search/search.js"></script>
+    <script src="../../reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="../../reveal.js/plugin/highlight/highlight.js"></script>
+    <script>
+
+        // Also available as an ES module, see:
+        // https://revealjs.com/initialization/
+        Reveal.initialize({
+            controls: false,
+            progress: true,
+            center: true,
+            history: true,
+            hash: true,
+            width: "70%",
+            height: "70%",
+            keyboard: {
+                39: 'next',
+                37: 'prev'
+            },
+            showHiddenSlides: false,
+            transition: 'fade', // none/fade/slide/convex/concave/zoom
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+        });
+        Reveal.configure({
+            pdfSeparateFragments: false
+        });
+    </script>
+</body>
+</html>

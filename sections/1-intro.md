@@ -20,3 +20,18 @@
 
 note:
 **Time Elapsed:** `0:00`.
+
+* Use mirror mode.
+* Logitech Spotlight armed and ready.
+
+---
+
+<!-- .slide: data-background-color="black" data-background-image="img/background/checo-perez-racing-point.jpg" data-background-opacity="0.55" -->
+
+# **What is more important?** <!-- .element class="stroke" -->
+
+<blockquote class="explanation">
+The journey or the destination?
+</blockquote>
+
+<https://commons.wikimedia.org/wiki/File:Sergio_Perez-Racing_Point_RP_20_%283%29.jpg> <!-- .element: class="attribution" -->

@@ -20,6 +20,7 @@
 }
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
     text-transform: none;
+    letter-spacing: -1px !important;
 }
 input { font-size: 27px; }
 
@@ -41,13 +42,13 @@ a {
 }
 
 .reveal ::selection {
-    color: black;
+    color: white;
     background: var(--eventColor);
     text-shadow: none; 
 }
   
 .reveal ::-moz-selection {
-    color: black;
+    color: white;
     background: var(--eventColor);
     text-shadow: none; 
 }

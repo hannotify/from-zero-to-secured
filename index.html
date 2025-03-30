@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
 
-    <title>From Zero to Secured: Live-Coding a Full-Stack Jakarta EE REST App with MicroProfile and JWT Authentication</title>
+    <title>From Zero to Secured: Live-Coding a Full-Stack Jakarta EE REST App with MicroProfile and JWT Authentication
+    </title>
 
     <meta name="description" content="">
     <meta name="author" content="Hanno Embregts">
@@ -19,17 +20,18 @@
     <link rel="stylesheet" href="../../reveal.js/dist/theme/sky.css" id="theme">
 
     <link rel="stylesheet" href="css/event-theme.css" id="custom">
-    
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap">
 
     <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="css/darcula.css" id="highlight-theme" /></head>
+    <link rel="stylesheet" href="css/intellij-light.css" id="highlight-theme" />
 
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/677a0b6628.js" crossorigin="anonymous"></script>
-<body>
+</head>
 
+<body>
     <div class="reveal">
 
         <!-- Any section element inside of this container is displayed as a slide -->
@@ -39,9 +41,57 @@
                 data-separator-vertical="^\r?\n---\r?\n$">
             </section>
 
+            <section data-markdown="sections/2-live-coding-intro.md" data-separator="^\r?\n------\r?\n$"
+                data-separator-vertical="^\r?\n---\r?\n$">
+            </section>
+
+            <section data-markdown="sections/3-open-liberty.md" data-separator="^\r?\n------\r?\n$"
+                data-separator-vertical="^\r?\n---\r?\n$">
+            </section>
+
+            <section data-markdown="sections/4-persistence.md" data-separator="^\r?\n------\r?\n$"
+                data-separator-vertical="^\r?\n---\r?\n$">
+            </section>
+
+            <section data-markdown="sections/5-championship-standings.md" data-separator="^\r?\n------\r?\n$"
+                data-separator-vertical="^\r?\n---\r?\n$">
+            </section>
+
+            <section data-markdown="sections/6-rest-standings.md" data-separator="^\r?\n------\r?\n$"
+                data-separator-vertical="^\r?\n---\r?\n$">
+            </section>
+
+            <section data-markdown="sections/7-all-rest-resources.md" data-separator="^\r?\n------\r?\n$"
+                data-separator-vertical="^\r?\n---\r?\n$">
+            </section>
+
+            <section data-markdown="sections/8-openapi.md" data-separator="^\r?\n------\r?\n$"
+                data-separator-vertical="^\r?\n---\r?\n$">
+            </section>
+
+            <section data-markdown="sections/9-fault-tolerance.md" data-separator="^\r?\n------\r?\n$"
+                data-separator-vertical="^\r?\n---\r?\n$">
+            </section>
+
+            <section data-markdown="sections/10-limit-enabled-features.md" data-separator="^\r?\n------\r?\n$"
+                data-separator-vertical="^\r?\n---\r?\n$">
+            </section>
+
+            <section data-markdown="sections/11-secure-endpoints.md" data-separator="^\r?\n------\r?\n$"
+                data-separator-vertical="^\r?\n---\r?\n$">
+            </section>
+
+            <section data-markdown="sections/12-connect-frontend.md" data-separator="^\r?\n------\r?\n$"
+                data-separator-vertical="^\r?\n---\r?\n$">
+            </section>
+
+            <section data-markdown="sections/13-takeaways.md" data-separator="^\r?\n------\r?\n$"
+                data-separator-vertical="^\r?\n---\r?\n$">
+            </section>
+
             <section>
                 <section data-background="img/background/questions-monopoly.jpeg" data-background-color="black"
-                    data-background-opacity="0.5">
+                    data-background-opacity="0.4">
                     <h1 class="stroke"><strong>Any questions?</strong></h1>
                     <a href="https://www.pexels.com/photo/monopoly-car-piece-1634213/"
                         class="attribution">https://www.pexels.com/photo/monopoly-car-piece-1634213/</a>
@@ -51,29 +101,33 @@
                     <br />
                     <table style="font-size: 100%">
                         <tr>
-                            <td style="text-align: right; vertical-align: middle; width: 25%"><i class="fa-brands fa-slideshare"></i></td>
+                            <td style="text-align: right; vertical-align: middle; width: 25%"><i
+                                    class="fa-brands fa-slideshare"></i></td>
                             <td style="vertical-align: middle;"><a
                                     href="https://hanno.codes/slides/from-zero-to-secured/javaland-2025">hanno.codes/slides/from-zero-to-secured/javaland-2025</a>
                             </td>
                         </tr>
                         <tr>
-                            <td style="text-align: right; vertical-align: middle;"><i class="fa-brands fa-github"></i></td>
-                            <td style="vertical-align: middle;" colspan="2"><a 
+                            <td style="text-align: right; vertical-align: middle;"><i class="fa-brands fa-github"></i>
+                            </td>
+                            <td style="vertical-align: middle;" colspan="2"><a
                                     href="https://github.com/hannotify/structured-concurrency-bar">github.com/hannotify/gravel-trapp</a>
                             </td>
                         </tr>
                         <tr>
-                            <td style="text-align: right; vertical-align: middle;"><i class="fa-solid fa-globe"></i></td>
-                            <td style="vertical-align: middle;"><a
-                                    href="https://hanno.codes">hanno.codes</a></td>
+                            <td style="text-align: right; vertical-align: middle;"><i class="fa-solid fa-globe"></i>
+                            </td>
+                            <td style="vertical-align: middle;"><a href="https://hanno.codes">hanno.codes</a></td>
                         </tr>
                         <tr>
-                            <td style="text-align: right; vertical-align: middle;"><i class="fa-brands fa-bluesky"></i></td>
+                            <td style="text-align: right; vertical-align: middle;"><i class="fa-brands fa-bluesky"></i>
+                            </td>
                             <td style="vertical-align: middle;"><a
                                     href="https://bsky.app/profile/hanno.codes">@hanno.codes</a></td>
                         </tr>
                         <tr>
-                            <td style="text-align: right; vertical-align: middle;"><i class="fa-regular fa-envelope"></i></td>
+                            <td style="text-align: right; vertical-align: middle;"><i
+                                    class="fa-regular fa-envelope"></i></td>
                             <td style="vertical-align: middle;"><a
                                     href="">hanno&#8203.&#8203embregts&#8203@&#8203infosupport&#8203.&#8203com</a></td>
                         </tr>
@@ -109,18 +163,18 @@
             hash: true,
             width: "70%",
             height: "70%",
-            keyboard: {
-                39: 'next',
-                37: 'prev'
-            },
             showHiddenSlides: false,
             transition: 'fade', // none/fade/slide/convex/concave/zoom
             // Learn about plugins: https://revealjs.com/plugins/
             plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+            // dependencies: [
+            //     { src: '//cdn.jsdelivr.net/npm/reveal-plantuml' },
+            // ]
         });
         Reveal.configure({
             pdfSeparateFragments: false
         });
     </script>
 </body>
+
 </html>

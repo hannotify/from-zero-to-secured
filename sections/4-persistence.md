@@ -51,7 +51,7 @@ When JPA doesn't support your data type (like the `java.time.Year` we used in Gr
 * implemented by a Jakarta EE interceptor <!-- .element: class="fragment fade-in-then-semi-out" -->
 * by default, runtime exceptions result in the transaction being rollbacked <!-- .element: class="fragment fade-in-then-semi-out" -->
 * by <!-- .element: class="fragment fade-in-then-semi-out" --> setting the `rollbackOn` property, this behavior can be extended to any arbitrary exception 
-* in <!-- .element: class="fragment fade-in-then-semi-out" --> contrast, `dontRollbackOn` indicates exception that should not rollback the transaction
+* in <!-- .element: class="fragment fade-in-then-semi-out" --> contrast, `dontRollbackOn` indicates exceptions that should not rollback the transaction
 
 ---
 

@@ -2,8 +2,6 @@
 
 # **Live Coding** <!-- .element class="stroke" -->
 
-## Let's use a fun domain!
-
 <https://www.pexels.com/photo/person-using-macbook-pro-on-person-s-lap-1181298> <!-- .element: class="attribution" -->
 
 ---

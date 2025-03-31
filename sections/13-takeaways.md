@@ -17,13 +17,13 @@
 ## Courses at Info Support
 
 <ul>
-    <li class="fragment">Course: "Jakarta EE & MicroProfile"<br/>
+    <li>Course: "Jakarta EE & MicroProfile"<br/>
         <small><a href="https://training.infosupport.com/en/courses/JEE/jakarta-ee">training.infosupport.com/en/courses/JEE</a></small>
     </li>    
-    <li class="fragment">Course: "Object Relational Mapping using JPA"<br/>
+    <li>Course: "Object Relational Mapping using JPA"<br/>
         <small><a href="https://training.infosupport.com/en/courses/JPA/object-relational-mapping-using-the-java-persistence-api-jpa">training.infosupport.com/en/courses/JPA</a></small>
     </li>
-    <li class="fragment">Course: "Angular - Building Professional Single-Page Applications"<br/>
+    <li>Course: "Angular - Building Professional Single-Page Applications"<br/>
         <small><a href="https://training.infosupport.com/en/courses/ANGULAR/angular-building-professional-single-page-applications">training.infosupport.com/en/courses/ANGULAR</a></small>
     </li>
 </ul>

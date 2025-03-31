@@ -10,7 +10,7 @@ let's calculate the **championship standings**
 
 ## On CDI Scopes
 
-<table style="font-size: 75%">
+<table style="font-size: 70%">
   <thead>
     <tr>
       <th style="text-align: right">Annotation</th>

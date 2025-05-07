@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="../../reveal.js/dist/reset.css">
     <link rel="stylesheet" href="../../reveal.js/dist/reveal.css">
-    <link rel="stylesheet" href="../../reveal.js/dist/theme/sky.css" id="theme">
+    <link rel="stylesheet" href="../../reveal.js/dist/theme/league.css" id="theme">
 
     <link rel="stylesheet" href="css/event-theme.css" id="custom">
 
@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap">
 
     <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="css/intellij-light.css" id="highlight-theme" />
+    <link rel="stylesheet" href="css/darcula.css" id="highlight-theme" />
 
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/677a0b6628.js" crossorigin="anonymous"></script>
@@ -104,14 +104,14 @@
                             <td style="text-align: right; vertical-align: middle; width: 25%"><i
                                     class="fa-brands fa-slideshare"></i></td>
                             <td style="vertical-align: middle;"><a
-                                    href="https://hanno.codes/slides/from-zero-to-secured/javaland-2025">hanno.codes/slides/from-zero-to-secured/javaland-2025</a>
+                                    href="https://hanno.codes/slides/from-zero-to-secured/jcon-2025">hanno.codes/slides/from-zero-to-secured/jcon-2025</a>
                             </td>
                         </tr>
                         <tr>
                             <td style="text-align: right; vertical-align: middle;"><i class="fa-brands fa-github"></i>
                             </td>
                             <td style="vertical-align: middle;" colspan="2"><a
-                                    href="https://github.com/hannotify/structured-concurrency-bar">github.com/hannotify/gravel-trapp</a>
+                                    href="https://github.com/hannotify/gravel-trapp">github.com/hannotify/gravel-trapp</a>
                             </td>
                         </tr>
                         <tr>
@@ -137,7 +137,7 @@
         </div>
 
         <div class="leftFooter">
-            <a href="https://twitter.com/hannotify">#JavaLand #ZeroToSecured #JakartaEE</a>
+            <a href="https://twitter.com/hannotify">#JCON2025 #ZeroToSecured #JakartaEE</a>
         </div>
 
         <div class="rightFooter">
@@ -156,7 +156,9 @@
         // Also available as an ES module, see:
         // https://revealjs.com/initialization/
         Reveal.initialize({
-            controls: false,
+            controls: true,
+            controlsTutorial: true,
+            controlsLayout: 'edges',
             progress: true,
             center: true,
             history: true,

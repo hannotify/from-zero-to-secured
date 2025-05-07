@@ -1,6 +1,6 @@
 <!-- .slide: data-background="img/background/live-coding-java.jpg" data-background-color="black" data-background-opacity="0.4" -->
 
-# **Takeaways** <!-- .element class="stroke" -->
+# Takeaways <!-- .element class="stroke" -->
 
 <https://www.pexels.com/photo/person-using-macbook-pro-on-person-s-lap-1181298> <!-- .element: class="attribution" -->
 

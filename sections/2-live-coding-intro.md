@@ -1,6 +1,6 @@
 <!-- .slide: data-background="img/background/live-coding-java.jpg" data-background-color="black" data-background-opacity="0.4" -->
 
-# **Live Coding** <!-- .element class="stroke" -->
+# Live Coding <!-- .element class="stroke" -->
 
 <https://www.pexels.com/photo/person-using-macbook-pro-on-person-s-lap-1181298> <!-- .element: class="attribution" -->
 
@@ -12,7 +12,7 @@
 
 <!-- .slide: data-background="img/background/nurburgring-gravel-trap.jpg" data-background-color="black" data-background-opacity="0.3" -->
 
-# **"Gravel Trapp"** <!-- .element class="stroke" -->
+# "Gravel Trapp" <!-- .element class="stroke" -->
 
 <a href="https://www.flickr.com/photos/vngrijl/5982700636" class="attribution">photo by VnGrijl on Flickr - https://www.flickr.com/photos/vngrijl/5982700636</a>
 

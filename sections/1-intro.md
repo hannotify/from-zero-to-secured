@@ -16,18 +16,11 @@
         <td style="vertical-align: middle; padding: 0 0 0 0"><a href="https://bsky.app/profile/hanno.codes">@hanno.codes</a></td>
     </tr>
 </table>
-<img data-src="img/logos/jcon-2025.png" width="15%" class="no-background"/>
-
-note:
-**Time Elapsed:** `0:00`.
-
-* Append `?controls=false` to the URL.
-* Use mirror mode.
-* Logitech Spotlight armed and ready.
+<img data-src="img/logos/jcon-2025.png" width="14%" class="no-background"/>
 
 ---
 
-<!-- .slide: data-background-color="black" data-background-image="img/background/checo-perez-racing-point.jpg" data-background-opacity="0.55" -->
+<!-- .slide: data-background-color="black" data-background-image="img/background/checo-perez-racing-point.jpg" data-background-opacity="0.4" -->
 
 # What is more important? <!-- .element class="stroke" -->
 

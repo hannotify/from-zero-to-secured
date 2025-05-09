@@ -10,6 +10,9 @@ and a few **unit tests**
 
 ---
 
+<!-- Omitted in 45-minute version. -->
+<!-- .slide: data-visibility="hidden" -->
+
 ## On JPA Attribute Converters
 
 When JPA doesn't support your data type (like the `java.time.Year` we used in Gravel Trapp), you can use an `AttributeConverter` to provide a custom mapping for it.
@@ -30,6 +33,9 @@ When JPA doesn't support your data type (like the `java.time.Year` we used in Gr
 </code></pre>
 
 ---
+
+<!-- Omitted in 45-minute version. -->
+<!-- .slide: data-visibility="hidden" -->
 
 ### Generic Steps to Create and Use an Attribute Converter
 
@@ -238,18 +244,18 @@ public interface UserRepository extends CrudRepository&lt;User, UUID&gt; {
 ### Methods in the CrudRepository interface
 
 ```java
-<S extends T> S save(S entity)
-<S extends T> List<S> saveAll(List<S> entities);
-Optional<T> findById(@By(ID) K id)
-Stream<T> findAll()
-Page<T> findAll(PageRequest pageRequest, Order<T> sortBy)
-void deleteById(@By(ID) K id)
-void delete(T entity)
-void deleteAll(List<? extends T> entities)
-<S extends T> S insert(S entity)
-<S extends T> List<S> insertAll(List<S> entities)
-<S extends T> S update(S entity)
-<S extends T> List<S> updateAll(List<S> entities)
+S save(S entity);
+List<S> saveAll(List<S> entities);
+Optional<T> findById(@By(ID) K id);
+Stream<T> findAll();
+Page<T> findAll(PageRequest pageRequest, Order<T> sortBy);
+void deleteById(@By(ID) K id);
+void delete(T entity);
+void deleteAll(List<? extends T> entities);
+S insert(S entity);
+List<S> insertAll(List<S> entities);
+S update(S entity);
+List<S> updateAll(List<S> entities);
 ```
 
 <br/>
@@ -260,7 +266,7 @@ void deleteAll(List<? extends T> entities)
 ### Find Methods
 
 * The find method's parameters and return type are used to generate the query statement <!-- .element: class="fragment fade-in-then-semi-out" -->
-* Every method parameter <!-- .element: class="fragment fade-in-then-semi-out" --> should have a matching entity attribute, or have a `@Param` annotation attached to it to define a custom database column name
-* These attributes should match by name and type <!-- .element: class="fragment fade-in-then-semi-out" -->
+* Every method parameter <!-- .element: class="fragment fade-in-then-semi-out" --> should have a matching entity attribute, or have an `@Param` annotation to define a custom database column name
+* Attributes should match by name and type <!-- .element: class="fragment fade-in-then-semi-out" -->
 
 > <!-- .element: class="fragment" --> In contrast to other frameworks (like Spring Data), the method name doesn't have to follow any pattern. 

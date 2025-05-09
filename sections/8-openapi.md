@@ -9,6 +9,9 @@ using MicroProfile OpenAPI
 
 ---
 
+<!-- Omitted in 45-minute version. -->
+<!-- .slide: data-visibility="hidden" -->
+
 ### Overview of Used OpenAPI Annotations 
 
 <table style="font-size: 75%">

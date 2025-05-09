@@ -8,6 +8,9 @@ let's calculate the **championship standings**
 
 ---
 
+<!-- Omitted in 45-minute version. -->
+<!-- .slide: data-visibility="hidden" -->
+
 ## On CDI Scopes
 
 <table style="font-size: 70%">

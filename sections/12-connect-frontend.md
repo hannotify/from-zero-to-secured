@@ -24,7 +24,7 @@ They prevent so-called <em>cross-origin requests</em>. <br/>
 
 ### A Few Example Cross-Origin Requests
 
-`hanno.codes --> javaland.eu` <!-- .element: class="fragment" -->
+`hanno.codes --> jcon.one` <!-- .element: class="fragment" -->
 
 `localhost:4200 --> localhost:9080` <!-- .element: class="fragment" -->
 

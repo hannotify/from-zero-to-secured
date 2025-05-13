@@ -263,6 +263,9 @@ List<S> updateAll(List<S> entities);
 
 ---
 
+<!-- Omitted in 45-minute version. -->
+<!-- .slide: data-visibility="hidden" -->
+
 ### Find Methods
 
 * The find method's parameters and return type are used to generate the query statement <!-- .element: class="fragment fade-in-then-semi-out" -->

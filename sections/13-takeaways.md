@@ -43,6 +43,10 @@
       <td>Create an OpenLiberty starter application</td>
     </tr>
     <tr>
+      <td style="text-align: right"><a href="https://openliberty.io/guides">openliberty.io/guides</a></td>
+      <td>The OpenLiberty tutorials</td>
+    </tr>
+    <tr>
       <td style="text-align: right"><a href="https://jwt.io">jwt.io</a></td>
       <td>JWT debugger</td>
     </tr>

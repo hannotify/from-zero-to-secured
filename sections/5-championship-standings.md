@@ -36,7 +36,6 @@ let's calculate the **championship standings**
       <td style="text-align: right"><code>@RequestScoped</code></td>
       <td>New instance per HTTP request</td>
       <td>Request-specific data, such as form data or request parameters</td>
-    </tr>
     <tr class="fragment">
       <td style="text-align: right"><code>@Dependent</code></td>
       <td>Depending on the lifecycle of the bean it is injected into</td>
@@ -44,3 +43,6 @@ let's calculate the **championship standings**
     </tr>
   </tbody>
 </table>
+
+note:
+TODO: the default scope for Jakarta Data Repositories is @Dependent.

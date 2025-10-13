@@ -160,3 +160,25 @@ and:
 ```plaintext
 The defaultServer server started in 4,372 seconds..
 ```
+
+---
+
+### Omit Version Numbers
+
+Alternatively, you can just define the platform versions, and the feature versions will be derived from that.
+
+<pre><code class="xml" data-line-numbers="1-13|2-3|4-12" data-trim>
+<featureManager>
+    <platform>jakartaee-11.0</platform>
+    <platform>microprofile-7.0</platform>
+    <feature>cdi</feature>
+    <feature>data</feature>
+    <feature>persistence</feature>
+    <feature>restfulWS</feature>
+    <feature>jsonb</feature>
+    <feature>appSecurity</feature>
+    <feature>mpOpenAPI</feature>
+    <feature>mpFaultTolerance</feature>
+    <feature>mpJwt</feature>
+</featureManager>
+</code></pre>

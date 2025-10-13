@@ -9,6 +9,42 @@ using MicroProfile OpenAPI
 
 ---
 
+<!-- .slide: data-auto-animate" -->
+
+### Two Ways to Set Schema Constraints
+
+#### Schema Properties
+
+<pre data-id="schema-constraints"><code class="java" data-trim data-line-numbers>
+@Schema(name = "StandingsEntry", description = "A driver's position in the championship standings.")
+public record StandingsEntry(
+        @Schema(minimum = "1", maximum = "20") int position,
+        @Schema(nullable = false) String driverName,
+        @Schema(nullable = false) String teamName,
+        @Schema(minimum = "0") int points) {
+}
+</code></pre>
+
+---
+
+<!-- .slide: data-auto-animate" -->
+
+### Two Ways to Set Schema Constraints
+
+#### Bean Validation
+
+<pre data-id="schema-constraints"><code class="java" data-trim data-line-numbers>
+@Schema(name = "StandingsEntry", description = "A driver's position in the championship standings.")
+public record StandingsEntry(
+        @Schema @Min(1) @Max(20) int position,
+        @Schema @NotEmpty String driverName,
+        @Schema @NotEmpty String teamName,
+        @Schema @Positive int points) {
+}
+</code></pre>
+
+---
+
 <!-- Omitted in 45-minute version. -->
 <!-- .slide: data-visibility="hidden" -->
 

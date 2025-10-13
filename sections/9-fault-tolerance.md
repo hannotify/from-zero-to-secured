@@ -15,7 +15,7 @@ Fault tolerance mechanisms are easily applied through annotations:
 
 <ul>
   <li class="fragment fade-in-then-semi-out"><code>@Timeout</code> - throws a <code>TimeoutException</code> after the specified delay, to prevent indefinite loading times</li>
-  <li class="fragment fade-in-then-semi-out"><code>@Fallback</code> - reverts to a fallback implementation when a specific <code>Exception</code> occurs <br/> <small>(works well in combination with <code>@Timeout</code>)</small></li>
+  <li class="fragment fade-in-then-semi-out"><code>@Fallback</code> - reverts to a fallback implementation when a specific <code>Exception</code> occurs <br/> <small>(works especially well in combination with <code>@Timeout</code>)</small></li>
 </ul>
 
 ---

@@ -23,7 +23,7 @@
     <li>Course: "Object Relational Mapping using JPA"<br/>
         <small><a href="https://training.infosupport.com/en/courses/JPA/object-relational-mapping-using-the-java-persistence-api-jpa">training.infosupport.com/en/courses/JPA</a></small>
     </li>
-    <li>Course: "Angular - Building Professional Single-Page Applications"<br/>
+    <li class="fragment">Course: "Angular - Building Professional Single-Page Applications"<br/>
         <small><a href="https://training.infosupport.com/en/courses/ANGULAR/angular-building-professional-single-page-applications">training.infosupport.com/en/courses/ANGULAR</a></small>
     </li>
 </ul>

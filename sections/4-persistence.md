@@ -145,91 +145,15 @@ EJBs offer many more features that we don't need in this case, like:
 
 ---
 
-## On Generic JPA Repositories
-
-For Gravel Trapp we created a generic `Repository<E,ID>` class:
-
-<pre class="fragment fade-in-then-semi-out"><code class="java" data-line-numbers data-trim>
-@Transactional
-public abstract class Repository&lt;E,ID&gt; {
-    @PersistenceContext(unitName = "gravel-trapp")
-    protected EntityManager em;
-    private final Class&lt;E&gt; entityClass;
-
-    public Repository() {
-        this.entityClass = entityClass();
-    }
-
-    protected abstract Class&lt;E&gt; entityClass();
-
-    public SequencedCollection&lt;E&gt; findAll() {
-        return em.createQuery("SELECT e FROM %s e".formatted(entityClass.getSimpleName()), entityClass).getResultList();
-    }
-
-    public Optional&lt;E&gt; findById(ID id) {
-        return Optional.ofNullable(em.find(entityClass, id));
-    }
-
-    public void create(E entity) {
-        em.persist(entity);
-    }
-
-    public E update(E entity) {
-        return em.merge(entity);
-    }
-
-    public void deleteById(ID id) {
-        var entity = findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("Invalid %sId: %s".formatted(entityClass, id)));
-        delete(entity);
-    }
-
-    public void delete(E entity) {
-        em.remove(entity);
-    }
-
-    public void deleteAll() {
-        var query = em.createQuery("DELETE FROM %s e".formatted(entityClass.getSimpleName()));
-        query.executeUpdate();
-    }
-}
-</code></pre>
-
----
-
-...and per entity a concrete `EntityRepository` class:
-
-<pre class="fragment fade-in-then-semi-out"><code class="java" data-line-numbers data-trim>
-@RequestScoped
-public class UserRepository extends Repository&lt;User, UUID> {
-    @Override
-    protected Class&lt;User&gt; entityClass() {
-        return User.class;
-    }
-
-    public UserDto findByUsernameAndPassword(String username, String password) {
-        return UserMapper.fromEntity(em.createQuery(
-                        """
-                        SELECT u 
-                        FROM User u 
-                        WHERE u.username = :username AND u.password = :password
-                        """, User.class)
-                .setParameter("username", username)
-                .setParameter("password", PasswordUtil.digest(password))
-                .getSingleResult());
-    }
-}
-</code></pre>
-
----
-
 ### Using Jakarta Data 1.0 
 
-<small>(will be a part of Jakarta EE 11, scheduled for release later in 2025)</small>
+<small>(part of the Jakarta EE 11 spec, support by OpenLiberty is currently in beta)</small>
+<small><a href="https://github.com/OpenLiberty/open-liberty/issues/19508">github.com/OpenLiberty/open-liberty/issues/19508</a></small>
 
 <pre><code class="java" data-line-numbers data-trim>
 @Repository
 public interface UserRepository extends CrudRepository&lt;User, UUID&gt; {
+    @Find
     public Optional&lt;User&gt; findByUsernameAndPassword(String username, String password) {
 }
 </code></pre>
@@ -262,9 +186,6 @@ List<S> updateAll(List<S> entities);
 <p class="fragment fade-in-then-semi-out">Your Jakarta Data implementation will generate appropriate implementations of these methods at runtime.</p>
 
 ---
-
-<!-- Omitted in 45-minute version. -->
-<!-- .slide: data-visibility="hidden" -->
 
 ### Find Methods
 

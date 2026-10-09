@@ -1,5 +1,5 @@
 :root {
-    --eventColor: #7248f0;
+    --eventColor: #8b6ce9;
 }
 
 .slides img {
@@ -19,6 +19,7 @@
     text-transform: none !important;
     letter-spacing: 1px !important;
 }
+
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
     font-family: 'Gill Sans';
     text-transform: none;

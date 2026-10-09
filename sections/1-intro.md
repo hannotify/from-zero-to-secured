@@ -1,7 +1,11 @@
+<!-- .slide: data-background-image="img/background/baselone-sponsors.png" data-background-size="cover"-->
+
+---
+
 <!-- .slide: data-background-opacity="1.0" -->
 
 ## From Zero to Secured:
-### Live-Coding a Full-Stack 
+#### Live-Coding a Full-Stack 
 ## Jakarta EE REST App 
 #### with MicroProfile and JWT Authentication
 

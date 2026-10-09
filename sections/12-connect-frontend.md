@@ -33,11 +33,12 @@ They prevent so-called <em>cross-origin requests</em>. <br/>
 ---
 
 ### Adding the Appropriate HTTP Response Headers in OpenLiberty
-<pre class="fragment"><code class="xml" data-trim data-line-numbers="1-7|4">
-&lt;cors allowCredentials=&quot;true&quot;
-    allowedHeaders=&quot;Referer, Content-Type, Accept, Authorization&quot; 
-    allowedMethods=&quot;GET, DELETE, POST, PUT, OPTIONS, HEAD&quot; 
-    allowedOrigins=&quot;http://localhost:4200&quot; 
-    domain=&quot;/gravel-trapp/api&quot; 
-    maxAge=&quot;3600&quot;/&gt;
-</code></pre>
+
+```xml [1-7|4]
+<cors allowCredentials="true"
+    allowedHeaders="Referer, Content-Type, Accept, Authorization" 
+    allowedMethods="GET, DELETE, POST, PUT, OPTIONS, HEAD" 
+    allowedOrigins="http://localhost:4200" 
+    domain="/gravel-trapp/api" 
+    maxAge="3600"/>
+```

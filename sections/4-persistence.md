@@ -147,8 +147,7 @@ EJBs offer many more features that we don't need in this case, like:
 
 ### Using Jakarta Data 1.0 
 
-<small>(part of the Jakarta EE 11 spec, support by OpenLiberty is currently in beta)</small>
-<small><a href="https://github.com/OpenLiberty/open-liberty/issues/19508">github.com/OpenLiberty/open-liberty/issues/19508</a></small>
+<small>(part of the Jakarta EE 11 spec, supported by OpenLiberty `v26.0.0.5` and up)</small>
 
 <pre><code class="java" data-line-numbers data-trim>
 @Repository

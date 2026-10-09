@@ -18,7 +18,7 @@ let's calculate the **championship standings**
     <tr>
       <th style="text-align: right">Annotation</th>
       <th>Lifecycle</th>
-      <th>Suitable for</th>
+      <th>Suitable for</th> 
     </tr>
   </thead>
   <tbody>

@@ -20,8 +20,8 @@ using the `generate-features` goal of the Liberty Maven plugin
 
 ```xml
 <featureManager>
-    <feature>jakartaee-10.0</feature>
-    <feature>microProfile-7.0</feature>
+    <feature>jakartaee-11.0</feature>
+    <feature>microProfile-7.1</feature>
 </featureManager>
 ```
 
@@ -170,7 +170,7 @@ Alternatively, you can just define the platform versions, and the feature versio
 <pre><code class="xml" data-line-numbers="1-13|2-3|4-12" data-trim>
 <featureManager>
     <platform>jakartaee-11.0</platform>
-    <platform>microprofile-7.0</platform>
+    <platform>microprofile-7.1</platform>
     <feature>cdi</feature>
     <feature>data</feature>
     <feature>persistence</feature>

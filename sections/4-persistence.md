@@ -2,9 +2,8 @@
 
 ## Persistence
 
-let's create a few **entities**,
-some **repositories**  
-and a few **unit tests**  
+let's create a few **entities**
+and some **repositories**  
 
 <https://pxhere.com/en/photo/1458897> <!-- .element: class="attribution" -->
 
@@ -58,90 +57,6 @@ When JPA doesn't support your data type (like the `java.time.Year` we used in Gr
 * by default, runtime exceptions result in the transaction being rollbacked <!-- .element: class="fragment fade-in-then-semi-out" -->
 * by <!-- .element: class="fragment fade-in-then-semi-out" --> setting the `rollbackOn` property, this behavior can be extended to any arbitrary exception 
 * in <!-- .element: class="fragment fade-in-then-semi-out" --> contrast, `dontRollbackOn` indicates exceptions that should not rollback the transaction
-
----
-
-## Why Did We Use CDI Beans and not EJBs?
-
-For Gravel Trapp we primarily need: 
-
-* transaction management
-* dependency injection
-* state management
-
-<span class="fragment">
-  <p>all of which are supported by CDI.</p>
-
-  <small>(using `@Transactional`, `@Inject`, and `@RequestScoped`/`@ApplicationScoped`)</small>
-</span>
-
----
-
-## EJB Features We Didn't Need
-
-EJBs offer many more features that we don't need in this case, like:
-
-* concurrency management
-* remote access
-* interceptors
-* timers
-* asynchronous processing
-
----
-
-### EJB vs. CDI Bean Cheat Sheet
-
-<table style="font-size: 50%">
-  <thead>
-    <tr>
-      <th style="text-align: right;">Feature</th>
-      <th>EJB</th>
-      <th>CDI Bean</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="fragment">
-      <th style="text-align: right;">Transaction Management</th>
-      <td>✅ Built-in support for declarative transaction management using annotations like <code>@TransactionAttribute</code>.</td>
-      <td>✅ Requires additional annotations like <code>@Transactional</code> for declarative transaction management.</td>
-    </tr>
-    <tr class="fragment">
-      <th style="text-align: right;">Concurrency Management</th>
-      <td>✅ Built-in support for concurrency management with annotations like <code>@Lock</code> and <code>@AccessTimeout</code>.</td>
-      <td>❌ No built-in concurrency management; must be handled manually or with additional libraries.</td>
-    </tr>    
-    <tr class="fragment">
-      <th style="text-align: right;">Remote Access</th>
-      <td>✅ Supports remote access via RMI, IIOP, or web services.</td>
-      <td>❌ Primarily designed for local access within the same application.</td>
-    </tr>
-    <tr class="fragment">
-      <th style="text-align: right;">Interceptors</th>
-      <td>✅ Supports interceptors with <code>@AroundInvoke</code> and lifecycle callback methods.</td>
-      <td>✅ Supports interceptors with <code>@Interceptor</code> and <code>@AroundInvoke</code> annotations.</td>
-    </tr>
-    <tr class="fragment">
-      <th style="text-align: right;">Timers</th>
-      <td>✅ Built-in support for scheduling tasks with <code>@Schedule</code> and <code>@Timeout</code>.</td>
-      <td>❌ No built-in support for scheduling tasks; requires additional libraries or frameworks.</td>
-    </tr>
-    <tr class="fragment">
-      <th style="text-align: right;">Dependency Injection</th>
-      <td>✅ Supports dependency injection with <code>@EJB</code> and <code>@Resource</code>.</td>
-      <td>✅ Supports dependency injection with <code>@Inject</code> and other CDI annotations.</td>
-    </tr>
-    <tr class="fragment">
-      <th style="text-align: right;">State Management</th>
-      <td>✅ Supports stateful and stateless session beans.</td>
-      <td>✅ Primarily stateless, but can use scopes like <code>@SessionScoped</code> and <code>@ApplicationScoped</code> for state management.</td>
-    </tr>
-    <tr class="fragment">
-      <th style="text-align: right;">Asynchronous Processing</th>
-      <td>✅ Supports asynchronous method invocation with <code>@Asynchronous</code>.</td>
-      <td>❌ Requires additional libraries or frameworks for asynchronous processing.</td>
-    </tr>
-  </tbody>
-</table>
 
 ---
 

@@ -2,9 +2,7 @@
 
 ## Use REST to Access Championship Standings
 
-let's run a **database**,
-configure **JTA persistence**
-and access the championship standings through **REST**
+let's access the championship standings through **REST**
 
 <https://pxhere.com/en/photo/1458897> <!-- .element: class="attribution" -->
 
